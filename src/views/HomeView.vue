@@ -1,5 +1,5 @@
 <template>
-  <div class="home bg-red-400 w-full flex flex-col">
+  <div class="home bg-red-400 w-full flex flex-col mb-16">
     <div class="h-96 hidden md:flex w-full bg-cover flex flex-col justify-center items-end pr-10 mb-16" :style="{ backgroundImage: 'url(' + bg + ')' }">
       <p class="text-white text-6xl text-center font-leagueEspartan font-bold sm:w-4/5 md:w-3/5 animate__animated animate__backInLeft">
         Aqui o saber encontra a paixão, e o futuro é moldado com excelência.
@@ -11,7 +11,7 @@
       </p>
     </div>
     <div class="flex flex-col items-center h-1/2 animate__animated animate__backInUp">
-      <div class="w-9/12 flex flex-col items-center space-y-9">
+      <div class="w-9/12 flex flex-col items-center space-y-9 mb-16">
         <img src="@/assets/faculdade-fanese.png" alt="fanese-img" class="w-96">
         <div>
           <p class="text-sm">
@@ -22,12 +22,41 @@
           </p>
         </div>
       </div>
+      <!-- percorre a lista de objetos cards e monta cada um dinamicamente -->
+      <div class="flex flex-col space-y-5 space-x-0 md:space-y-0 md:space-x-5 md:flex-row mb-16">
+        <Card
+        v-for="(card, index) in cards" :key="index"
+        :texto = "card.texto"
+        :titulo="card.titulo"
+        :icone="require('@/assets/' + card.icone)">
+        </Card>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
+import Card from '@/components/Home/Card.vue'
+
 const bg = require('@/assets/Bg-home.jpg')
 const bgOpacity = require('@/assets/Bg-home-opacity.png')
 
+const cards = [
+  {
+    titulo: 'VISÃO',
+    texto: 'Ser um centro educacional de impacto econômico e social.',
+    icone: 'mission-ico.svg'
+  },
+  {
+    titulo: 'MISSÃO',
+    texto: 'Promover ações efetivas de educação superior de qualidade, com uma concepção humanística, holística e empreendedora, na formação de profissionais nas diversas áreas do conhecimento, em sintonia com as transformações sociais e as exigências do mercado.',
+    icone: 'values-icon.svg'
+  },
+  {
+    titulo: 'VALORES',
+    texto: 'Oferta de serviços educacionais de qualidade; Respeito ao ser humano e às diversidades; Ética e responsabilidade socioambiental; Compromisso com as comunidades interna e externa; Busca contínua pela atualização, aperfeiçoamento e inovação.',
+    icone: 'vision-icon.svg'
+  }
+  // Adicione mais objetos conforme necessário
+]
 </script>
