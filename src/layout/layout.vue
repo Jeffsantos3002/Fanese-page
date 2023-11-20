@@ -1,6 +1,7 @@
+<!-- Layout do site -->
 <template>
   <v-card class="elevation-0">
-    <v-layout>
+    <v-layout class="flex flex-col">
       <!-- navbar -->
       <v-app-bar
         class="w-full flex justify-between flex-row items-center space-x-8"
@@ -22,9 +23,10 @@
         </v-list>
       </v-navigation-drawer>
       <!-- conteúdo da página -->
-      <v-main class="flex w-full justify-center">
+      <v-main class="flex justify-center">
         <router-view class=" z-10 realtive"/>
       </v-main>
+      <FooterFanese/>
     </v-layout>
   </v-card>
 </template>
@@ -33,7 +35,10 @@
 import { ref } from 'vue'
 import Navbar from '@/components/Navbar.vue'
 import sections from '../../data/sections'
+import FooterFanese from '@/components/FooterFanese.vue'
+
 const drawer = ref(null)
+
 </script>
 
 <style>

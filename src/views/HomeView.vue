@@ -45,17 +45,17 @@ const cards = [
   {
     titulo: 'VISÃO',
     texto: 'Ser um centro educacional de impacto econômico e social.',
-    icone: 'mission-ico.svg'
+    icone: 'vision-icon.svg'
   },
   {
     titulo: 'MISSÃO',
     texto: 'Promover ações efetivas de educação superior de qualidade, com uma concepção humanística, holística e empreendedora, na formação de profissionais nas diversas áreas do conhecimento, em sintonia com as transformações sociais e as exigências do mercado.',
-    icone: 'values-icon.svg'
+    icone: 'mission-ico.svg'
   },
   {
     titulo: 'VALORES',
     texto: 'Oferta de serviços educacionais de qualidade; Respeito ao ser humano e às diversidades; Ética e responsabilidade socioambiental; Compromisso com as comunidades interna e externa; Busca contínua pela atualização, aperfeiçoamento e inovação.',
-    icone: 'vision-icon.svg'
+    icone: 'values-icon.svg'
   }
   // Adicione mais objetos conforme necessário
 ]

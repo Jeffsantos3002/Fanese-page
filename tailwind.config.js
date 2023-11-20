@@ -7,7 +7,8 @@ export default {
     },
     colors:{
       'greenFanese': '#28DC55',
-      'roxo': '#6F51D6'
+      'roxo': '#6F51D6',
+      'footer': '#292D32'
     },
     fontFamily: {
       roboto: ['Roboto', 'sans-serif'],
