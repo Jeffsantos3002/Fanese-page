@@ -1,5 +1,14 @@
 # app
 
+## Esse projeto foi construido utilizando as principais tecnologias
+- Vue.js
+- Tailwind CSS
+- Vuetify
+- Figma
+- Pnpm
+
+Essas tecnologias auxiliaram na construção do site de maneira mais eficiente. Utilizei o figma para fazer um esborço do que iria construir
+
 ## Project setup
 ```
 pnpm install
@@ -10,15 +19,3 @@ pnpm install
 pnpm run serve
 ```
 
-### Compiles and minifies for production
-```
-pnpm run build
-```
-
-### Lints and fixes files
-```
-pnpm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
