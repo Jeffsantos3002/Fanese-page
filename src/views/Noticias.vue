@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <!-- <Calendario></Calendario> -->
+  <div class="w-full">
+    Em construção...
   </div>
 </template>
 

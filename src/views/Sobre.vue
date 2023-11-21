@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <p>alguma coisa</p>
+  <div class="w-full">
+    Em construção...
   </div>
 </template>
 <script>
