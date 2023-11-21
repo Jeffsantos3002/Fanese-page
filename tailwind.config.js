@@ -8,6 +8,7 @@ export default {
     colors:{
       'greenFanese': '#28DC55',
       'roxo': '#6F51D6',
+      'roxoEscuro': '#6951BF',
       'footer': '#292D32',
       'gray': '#666666'
     },
