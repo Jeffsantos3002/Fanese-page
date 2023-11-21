@@ -1,9 +1,11 @@
 <template>
-
+  <div class="w-full">
+    Em construção...
+  </div>
 </template>
 
 <script>
-export default{
+export default {
   name: 'Cursos'
 }
 </script>

@@ -10,6 +10,7 @@
         Aqui o saber encontra a paixão, e o futuro é moldado com excelência.
       </p>
     </div>
+    <div><NoticiasHome/></div>
     <div class="flex flex-col items-center h-1/2 animate__animated animate__backInUp">
       <div class="w-9/12 flex flex-col items-center space-y-9 mb-16">
         <img src="@/assets/faculdade-fanese.png" alt="fanese-img" class="w-96">
@@ -37,6 +38,7 @@
 
 <script setup>
 import Card from '@/components/Home/Card.vue'
+import NoticiasHome from '@/components/Home/NoticiasHome.vue'
 
 const bg = require('@/assets/Bg-home.jpg')
 const bgOpacity = require('@/assets/Bg-home-opacity.png')

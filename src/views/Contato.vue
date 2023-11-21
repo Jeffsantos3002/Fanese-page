@@ -5,7 +5,7 @@
       <p class="font-medium text-base text-center">Através de nosso formulário, deixe suas dúvidas ou sugestões, entraremos em contato assim que possível.</p>
     </div>
     <div class="bg-greenFanese flex flex-row w-full h-full py-20 px-12 justify-center">
-      <form id="form-contato" class="w-96 bg-white p-5 flex flex-col space-y-5 rounded-2xl">
+      <form id="form-contato" class="w-96 bg-white p-5 flex flex-col space-y-5 rounded-2xl animate__animated animate__bounceInLeft">
         <!-- Campo Nome -->
         <input type="text" id="nome" name="nome" placeholder="Nome" class="p-1.5 border focus:border-indigo-700 focus:outline-none border-black rounded" required>
         <!-- mensagem de verifição -->
@@ -50,7 +50,7 @@
 
 <script>
 export default {
-  name: 'Cursos',
+  name: 'Contato',
   data () {
     return {
       verificaEmail: null,
